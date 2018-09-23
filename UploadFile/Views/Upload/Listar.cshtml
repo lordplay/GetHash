@@ -1,0 +1,37 @@
+﻿@model List<UploadFile.Models.UploadFileResult>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<table>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Hash
+        </th>
+        <th>
+
+        </th>
+    </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modeliItem => item.IDArquivo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Hash)
+                </td>
+                <td class="text-center">
+                              
+                </td>
+            </tr>
+
+        }
+    
+    
+</table>
